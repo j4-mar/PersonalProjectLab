@@ -10,15 +10,18 @@ namespace PersonalProjectLab
         public decimal CalculateShootingPercentage(int shotsMade, int shotsAtt)
         {
             decimal avg = 0.00m;
-            int ShotPtg;
-            ShotPtg = shotsMade / shotsAtt;
+            //int ShotPtg;
+            //ShotPtg = (decimal)shotsMade / shotsAtt;
+            avg = (decimal)shotsMade / shotsAtt;
             return avg;
         }
 
         public decimal Calculate3Point(int threeMade, int threeAtt)
         {
             decimal avg = 0.00m;
-            avg = threeMade / threeAtt;
+            //int threePoint;
+            //threePoint = threeMade / threeAtt;
+            avg = (decimal)threeMade / threeAtt;
             return avg;
         }
 

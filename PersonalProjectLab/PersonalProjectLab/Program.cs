@@ -56,8 +56,10 @@ namespace PersonalProjectLab
                         input = Console.ReadLine();
                         threeMade = int.Parse(input);
                         //Calculate the 3-point percentage
+                        BasketballStats stats = new BasketballStats();
+                        decimal avg = stats.Calculate3Point(threeMade, threeAtt);
                         //Write the 3-point percentage to the console
-                        Console.WriteLine("3-Point Percentage:");
+                        Console.WriteLine("3-Point Percentage:" + avg);
                     }   
                 }
                 //Else they choose effective field goal percentage
@@ -80,8 +82,10 @@ namespace PersonalProjectLab
                     input = Console.ReadLine();
                     threeMade = int.Parse(input);
                     //Calculate the effective field goal percentage
+                    BasketballStats stats = new BasketballStats();
+                    decimal avg = stats.CalculateEFG(shotsMade, threeMade, shotsAtt);
                     //Write the effective field goal percentage to the console
-                    Console.WriteLine("Effective Field Goal Percentage:");
+                    Console.WriteLine("Effective Field Goal Percentage:" + avg);
                 }
                 //Prompt the user to see if the want to calculate another stat
                 Console.WriteLine("Do you want to calculate another stat? Type 'yes' or 'no'");
