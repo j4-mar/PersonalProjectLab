@@ -1,5 +1,4 @@
 ﻿using System;
-// you owe me 300$ dollars for my services
 namespace PersonalProjectLab
 {
     class Program
